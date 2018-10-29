@@ -1,0 +1,9 @@
+.breadcrumb {
+    padding: 20px;
+    font-size: 20px;
+    padding-left: 50px
+}
+
+.breadcrumb a {
+    color: blue;
+}
