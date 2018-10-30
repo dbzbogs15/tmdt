@@ -178,3 +178,6 @@ p.lead {
 	border-radius: 0;
 	color: blue
 }
+td > a {
+	color: blue
+}
