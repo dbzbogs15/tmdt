@@ -1,0 +1,581 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tour Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- My design -->
+    <link rel="stylesheet" href="css/ngohngthai.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+              font-family: Arial;
+              margin: 0;
+            }
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            img {
+              vertical-align: middle;
+            }
+            
+            /* Position the image container (needed to position the left and right arrows) */
+            .container {
+              position: relative;
+            }
+            
+            /* Hide the images by default */
+            .mySlides {
+              display: none;
+              margin-left: -15px;
+              margin-right: -15px;
+            }
+            
+            /* Add a pointer when hovering over the thumbnail images */
+            .cursor {
+              cursor: pointer;
+            }
+            
+            /* Next & previous buttons */
+            .prev,
+            .next {
+              cursor: pointer;
+              position: absolute;
+              top: 40%;
+              width: auto;
+              padding: 16px;
+              margin-top: -50px;
+              color: white;
+              font-weight: bold;
+              font-size: 20px;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+              -webkit-user-select: none;
+            }
+            
+            /* Position the "next button" to the right */
+            .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+            
+            /* Container for image text */
+            .caption-container {
+              text-align: center;
+              background-color: #222;
+              padding: 2px 16px;
+              color: white;
+              margin-left: -15px;
+              margin-right: -15px;
+            }
+            
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Six columns side by side */
+            .column {
+              float: left;
+              width: 16.66%;
+            }
+            
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+              opacity: 0.6;
+            }
+            
+            .active,
+            .demo:hover {
+              opacity: 1;
+            }
+            </style>
+
+
+</head>
+
+<body>
+
+    <div class="colorlib-loader"></div>
+
+    <div id="page">
+        <nav class="colorlib-nav" role="navigation">
+            <div class="top-menu">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <div id="colorlib-logo"><a href="index.html">HOME</a></div>
+                        </div>
+                        <div class="col-xs-10 text-right menu-1">
+                            <ul>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="hotels.html">Homestay</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="">Đăng ký</a></li>
+                                <li><a href="">Đăng nhập</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <aside id="colorlib-hero">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li style="background-image: url(images/img_bg_2.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                    <div class="slider-text-inner text-center">
+                                        <h2>6000 ngàn căn hộ cho bạn lựa chọn</h2>
+                                        <h1>6000 NGÀN CĂN HỘ CHO BẠN LỰA CHỌN</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url(images/img_bg_5.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container-fluids">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                    <div class="slider-text-inner text-center">
+                                        <h2>Hãy chọn những căn nhà phù hợp</h2>
+                                        <h1>NHÀ CỦA BẠN</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url(images/img_bg_4.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                    <div class="slider-text-inner text-center">
+                                        <h2>Bạn đang tìm những căn hộ view bản cho gia đình</h2>
+                                        <h1>NHỮNG CĂN HỘ VIEW BIỂN</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="colorlib-wrap" style="padding-top: 0">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="#">Tìm kiếm</a></li>
+                    <li class="breadcrumb-item"><a href="#">Homestay</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Thông Tin Chi Tiết</li>
+                </ol>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="wrap-division">
+                                    <h2>
+                                            VANI HOME – 200m to the beach – Hac 12345
+                                            Thành phố Nha Trang, Khánh Hòa, Vietnam
+                                    </h2>
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading">
+                                            <h1 class="panel-title">THÔNG TIN CHI TIẾT</h1>
+                                        </div>
+                                        <div class="panel-body">
+                                            <ul class="nav nav-pills nav-justified">
+                                                <li class="active"><a data-toggle="pill" href="#home">Ảnh căn hộ</a></li>
+                                                <li><a data-toggle="pill" href="#menu1">Thông tin phòng</a></li>
+                                                <li><a data-toggle="pill" href="#menu2">Đánh giá</a></li>
+                                                <li><a data-toggle="pill" href="#menu3">Bản đồ</a></li>
+                                            </ul>
+
+                                            <div class="tab-content">
+                                                <div id="home" class="tab-pane fade in active">
+                                                    <h2 style="text-align:center">Ảnh căn hộ</h2>
+
+                                                    <div class="container" style="width: 100%">
+                                                        <div class="mySlides">
+                                                            <div class="numbertext">1 / 6</div>
+                                                            <img src="https://www.w3schools.com/howto/img_woods_wide.jpg"
+                                                                style="width:100%">
+                                                        </div>
+
+                                                        <div class="mySlides">
+                                                            <div class="numbertext">2 / 6</div>
+                                                            <img src="https://www.w3schools.com/howto/img_5terre_wide.jpg"
+                                                                style="width:100%">
+                                                        </div>
+
+                                                        <div class="mySlides">
+                                                            <div class="numbertext">3 / 6</div>
+                                                            <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg"
+                                                                style="width:100%">
+                                                        </div>
+
+                                                        <div class="mySlides">
+                                                            <div class="numbertext">4 / 6</div>
+                                                            <img src="https://www.w3schools.com/howto/img_lights_wide.jpg"
+                                                                style="width:100%">
+                                                        </div>
+
+                                                        <div class="mySlides">
+                                                            <div class="numbertext">5 / 6</div>
+                                                            <img src="https://www.w3schools.com/howto/img_nature_wide.jpg"
+                                                                style="width:100%">
+                                                        </div>
+
+                                                        <div class="mySlides">
+                                                            <div class="numbertext">6 / 6</div>
+                                                            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg"
+                                                                style="width:100%">
+                                                        </div>
+
+                                                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                                                        <div class="caption-container">
+                                                            <p id="caption"></p>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="column">
+                                                                <img class="demo cursor" src="https://www.w3schools.com/howto/img_woods.jpg"
+                                                                    style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                                                            </div>
+                                                            <div class="column">
+                                                                <img class="demo cursor" src="https://www.w3schools.com/howto/img_5terre.jpg"
+                                                                    style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                                                            </div>
+                                                            <div class="column">
+                                                                <img class="demo cursor" src="https://www.w3schools.com/howto/img_mountains.jpg"
+                                                                    style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                                                            </div>
+                                                            <div class="column">
+                                                                <img class="demo cursor" src="https://www.w3schools.com/howto/img_lights.jpg"
+                                                                    style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                                                            </div>
+                                                            <div class="column">
+                                                                <img class="demo cursor" src="https://www.w3schools.com/howto/img_nature.jpg"
+                                                                    style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                                                            </div>
+                                                            <div class="column">
+                                                                <img class="demo cursor" src="https://www.w3schools.com/howto/img_snow.jpg"
+                                                                    style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="menu1" class="tab-pane fade">
+                                                    <div class="alert alert-success">
+                                                        Đang cập nhật
+                                                    </div>
+                                                </div>
+                                                <div id="menu2" class="tab-pane fade">
+                                                    <div class="alert alert-success">
+                                                        Chưa có bài đánh giá nào
+                                                    </div>
+                                                </div>
+                                                <div id="menu3" class="tab-pane fade">
+                                                    <div class="alert alert-success">
+                                                        <strong>Success!</strong> You should <a href="#" class="alert-link">read
+                                                            this message</a>.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SIDEBAR-->
+                    <div class="col-md-3">
+                        <div class="sidebar-wrap">
+                            <div class="side search-wrap animate-box">
+                                <h3 class="sidebar-heading">Tìm căn hộ cho bạn</h3>
+                                <form method="post" action="booking.html" class="colorlib-form">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="date">Ngày nhận:</label>
+                                                <div class="form-field">
+                                                    <i class="icon icon-calendar2"></i>
+                                                    <input type="text" id="date" class="form-control date" placeholder="Ngày nhận">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="date">Ngày trả: </label>
+                                                <div class="form-field">
+                                                    <i class="icon icon-calendar2"></i>
+                                                    <input type="text" id="date" class="form-control date" placeholder="Ngày trả">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="guests">Số người</label>
+                                                <div class="form-field">
+                                                    <i class="icon icon-arrow-down3"></i>
+                                                    <select name="people" id="people" class="form-control">
+                                                        <option value="#">1</option>
+                                                        <option value="#">2</option>
+                                                        <option value="#">3</option>
+                                                        <option value="#">4</option>
+                                                        <option value="#">5+</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="submit" name="submit" id="submit" value="Đặt phòng này" class="btn btn-primary btn-block">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="colorlib-subscribe" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+                        <h2>Sign Up for a Newsletter</h2>
+                        <p>Sign up for our mailing list to get latest updates and offers.</p>
+                        <form class="form-inline qbstp-header-subscribe">
+                            <div class="row">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="colorlib-footer" role="contentinfo">
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class="col-md-3 colorlib-widget">
+                        <h4>Tour Agency</h4>
+                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta
+                            adipisci
+                            architecto culpa amet.</p>
+                        <p>
+                            <ul class="colorlib-social-icons">
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-2 colorlib-widget">
+                        <h4>Book Now</h4>
+                        <p>
+                            <ul class="colorlib-footer-links">
+                                <li><a href="#">Flight</a></li>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Car Rent</a></li>
+                                <li><a href="#">Beach &amp; Resorts</a></li>
+                                <li><a href="#">Cruises</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-2 colorlib-widget">
+                        <h4>Top Deals</h4>
+                        <p>
+                            <ul class="colorlib-footer-links">
+                                <li><a href="#">Edina Hotel</a></li>
+                                <li><a href="#">Quality Suites</a></li>
+                                <li><a href="#">The Hotel Zephyr</a></li>
+                                <li><a href="#">Da Vinci Villa</a></li>
+                                <li><a href="#">Hotel Epikk</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <h4>Blog Post</h4>
+                        <ul class="colorlib-footer-links">
+                            <li><a href="#">The Ultimate Packing List For Female Travelers</a></li>
+                            <li><a href="#">How These 5 People Found The Path to Their Dream Trip</a></li>
+                            <li><a href="#">A Definitive Guide to the Best Dining and Drinking Venues in the City</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-md-push-1">
+                        <h4>Contact Information</h4>
+                        <ul class="colorlib-footer-links">
+                            <li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
+                            <li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+                            <li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+                            <li><a href="#">yoursite.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template
+                            is made with <i class="icon-heart2" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                            <span class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>
+                                ,
+                                <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <!-- Date Picker -->
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <!-- Main -->
+    <script src="js/main.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+</body>
+
+</html>

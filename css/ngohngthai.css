@@ -171,3 +171,10 @@ p.lead {
 .check-date {
 	color: #999
 }
+.panel-body>.nav {
+	border: 1px solid blue;
+}
+.nav-pills > li > a {
+	border-radius: 0;
+	color: blue
+}
